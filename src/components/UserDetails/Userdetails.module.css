@@ -1,0 +1,27 @@
+.userMain{
+    display: flex;
+    border: solid 2px darkblue;
+    border-radius: 10px;
+    padding: 10px;
+    height: max-content;
+    column-gap: 5px;
+    align-items: center;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 5px;
+}
+.userDiv{
+    background: #eae4e1;
+    border: solid 2px #83613a;
+    border-radius: 5px;
+    padding: 2px;
+}
+.posts{
+    background: #c2b8ac;
+    border: solid 3px #83613a;
+    border-radius: 8px;
+    height: max-content;
+}

@@ -1,0 +1,15 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px darkblue;
+    border-radius: 10px;
+    padding: 10px;
+    height: max-content;
+    row-gap: 5px;
+}
+.postDiv{
+    background: #eae4e1;
+    border: solid 2px #83613a;
+    border-radius: 5px;
+    padding: 2px;
+}
