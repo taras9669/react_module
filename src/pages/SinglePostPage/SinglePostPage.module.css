@@ -1,0 +1,17 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #48008b;
+    border-radius: 10px;
+    padding: 10px;
+    height: max-content;
+    row-gap: 5px;
+}
+.postDiv{
+    column-gap: 10px;
+    background: #9fc5e0;
+    border: solid 2px #3d66e0;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 25px;
+}

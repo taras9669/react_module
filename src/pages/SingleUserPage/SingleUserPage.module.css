@@ -1,0 +1,17 @@
+.user{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #8b0020;
+    border-radius: 10px;
+    padding: 10px;
+    height: max-content;
+    row-gap: 5px;
+}
+.userDiv{
+    column-gap: 10px;
+    background: #bbdebb;
+    border: solid 2px #327532;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 25px;
+}

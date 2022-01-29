@@ -1,0 +1,15 @@
+.post{
+    display: flex;
+    background: #add5fd;
+    border: solid 2px;
+    border-radius: 10px;
+    justify-content: space-between ;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+.postDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}

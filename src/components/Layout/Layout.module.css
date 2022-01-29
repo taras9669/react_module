@@ -1,0 +1,32 @@
+
+.header {
+    background-color: #0d2a19;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header a{
+    color: #d3d3c3;
+    font-size: 70px;
+    text-decoration: none;
+    font-family: Cambria;
+}
+
+.header a[class='active']{
+    color: #a90707;
+    font-size: 80px;
+    text-decoration: none;
+    font-family: Cambria;
+}
+
+.outlet {
+    width: 95%;
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+    overflow-y: auto;
+}
