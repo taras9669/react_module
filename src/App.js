@@ -9,6 +9,8 @@ import Layout from "./components/Layout/Layout";
 import SingleUserPage from "./pages/SingleUserPage/SingleUserPage"
 import AllCommentsPage from "./pages/AllCommentsPage/AllCommentsPage";
 import AllPostsPage from "./pages/AllPostsPage/AllPostsPage";
+import UserAlbumsPage from "./pages/UserAlbumsPage/UserAlbumsPage";
+import AllAlbumPhotos from "./pages/AllAlbumPhotos/AllAlbumPhotos";
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
            <Route path={'users'} element={<UsersPage/>}>
                 <Route path={':id'} element={<SingleUserPage/>}>
                     <Route path={'posts'} element={<AllPostsPage/>}/>
+                </Route>
+                <Route path={`:id/albums`} element={<UserAlbumsPage/>}>
+                    <Route path={':albumId/photos'} element={<AllAlbumPhotos/>}/>
                 </Route>
            </Route>
            <Route path={'posts'} element={<PostsPage/>}>
