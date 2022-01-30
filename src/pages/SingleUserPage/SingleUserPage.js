@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useLocation, useParams} from "react-router-dom";
+import {Outlet, useLocation, useNavigate, useParams} from "react-router-dom";
 
 import {userService} from "../../services/user.service";
 import css from './SingleUserPage.module.css'
@@ -8,6 +8,7 @@ const SingleUserPage = () => {
     const {id} = useParams();
     const [user, setUser] = useState(null);
     const {state} = useLocation();
+    const navigate = useNavigate();
 
     useEffect(()=> {
         if (state){
@@ -26,8 +27,12 @@ const SingleUserPage = () => {
                     <div className={css.userDiv}>EMAIL: {user.email}</div>
                     <div className={css.userDiv}>CITY: {user.address.city}</div>
                     <div className={css.userDiv}>PHONE: {user.phone}</div>
-                    <button>User Details</button>
+                    <button onClick={() => {
+                        navigate(`posts`)
+                    }}>Posts of user</button>
+                    <div><Outlet/></div>
                 </div>
+
             )}
         </div>
     );

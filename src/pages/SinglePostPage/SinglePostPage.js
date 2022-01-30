@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useLocation, useParams} from "react-router-dom";
+import {Outlet, useLocation, useNavigate, useParams} from "react-router-dom";
 
 import {postService} from "../../services/post.service";
 import css from './SinglePostPage.module.css'
@@ -8,6 +8,7 @@ const SinglePostPage = () => {
     const {id} = useParams();
     const [post, setPost] = useState(null);
     const {state} = useLocation();
+    const navigate = useNavigate();
 
     useEffect(()=> {
         if (state){
@@ -24,7 +25,11 @@ const SinglePostPage = () => {
                     <div className={css.postDiv}>ID: {post.id}</div>
                     <div className={css.postDiv}>TITLE: {post.title}</div>
                     <div className={css.postDiv}>BODY: {post.body}</div>
-                    <button>Post Details</button>
+                    <button onClick={() => {
+                        navigate(`comments`)
+                        state={post}
+                    }}>Comments of post</button>
+                    <div><Outlet/></div>
                 </div>
             )}
         </div>

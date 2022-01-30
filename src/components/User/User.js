@@ -9,6 +9,7 @@ const User = ({user}) => {
         <div className={css.userDiv}>
             <div className={css.user}>
                 <Link to={id.toString()} state={user}>NAME: {name}</Link>
+                <button>Albums</button>
             </div>
         </div>
     );
