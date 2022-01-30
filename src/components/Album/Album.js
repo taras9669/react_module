@@ -9,8 +9,9 @@ const Album = ({album}) => {
             <div>ID: {album.id}</div>
             <div>TITLE: {album.title}</div>
             <button onClick={() => {
-                navigate(album.userId+`/photos`)
-            }}>Albums</button>
+                navigate(album.id+`/photos`)
+            }}>Photos</button>
+
         </div>
     );
 };

@@ -8,8 +8,6 @@ import CommentById from "../../components/CommentById/CommentById";
 const AllCommentsPage = () => {
     const {id} = useParams();
     const [commentsById, setCommentsById] = useState([]);
-    //const {state} = useLocation();
-    // const navigate = useNavigate();
 
     useEffect(()=> {
         postService.getCommentsById(id).then(value => setCommentsById([...value]))

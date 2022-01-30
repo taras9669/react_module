@@ -27,7 +27,6 @@ const SinglePostPage = () => {
                     <div className={css.postDiv}>BODY: {post.body}</div>
                     <button onClick={() => {
                         navigate(`comments`)
-                        state={post}
                     }}>Comments of post</button>
                     <div><Outlet/></div>
                 </div>

@@ -16,7 +16,7 @@ const SingleUserPage = () => {
             return
         }
         userService.getById(id).then(value => setUser({...value}))
-    },[state, id, user])
+    },[id])
     return (
         <div>
             {user && (
