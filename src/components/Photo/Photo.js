@@ -11,7 +11,7 @@ const Photo = ({photo}) => {
                 <div> <strong>ID:</strong> {photo.id}</div> </div>
             <div className={css.photoBlocks}>
                 <div><strong>TITLE: </strong>{photo.title}</div>
-                <div><img src={photo.thumbnailUrl} alt="picture"/></div>
+                <div><img src={photo.thumbnailUrl} alt="pict"/></div>
             </div>
         </div>
     );
