@@ -1,14 +1,18 @@
 import React from 'react';
-
+import css from "./Photo.module.css"
 
 const Photo = ({photo}) => {
 
     return (
-        <div>
-            <div>ALBUMID: {photo.albumId}</div>
-            <div>ID: {photo.id}</div>
-            <div>TITLE: {photo.title}</div>
-            <div><img src={photo.thumbnailUrl} alt="picture"/></div>
+        <div className={css.wrap}>
+            <div className={css.photoBlocks}>
+                <div> <strong> ALBUM ID:</strong>  {photo.albumId}</div>   </div>
+            <div className={css.photoBlocks}>
+                <div> <strong>ID:</strong> {photo.id}</div> </div>
+            <div className={css.photoBlocks}>
+                <div><strong>TITLE: </strong>{photo.title}</div>
+                <div><img src={photo.thumbnailUrl} alt="picture"/></div>
+            </div>
         </div>
     );
 };

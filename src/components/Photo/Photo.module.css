@@ -1,0 +1,17 @@
+
+.wrap {
+    column-gap: 10px;
+    border: solid 2px;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.photoBlocks {
+    background: #e3abab;
+    border: solid 2px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
