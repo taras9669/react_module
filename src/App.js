@@ -1,6 +1,6 @@
 import {Route, Routes} from "react-router-dom"
 
-import css from './App.module.css';
+
 import UsersPage from "./pages/UsersPage/UsersPage"
 import PostsPage from "./pages/PostsPage/PostsPage"
 import SinglePostPage from "./pages/SinglePostPage/SinglePostPage"

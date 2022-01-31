@@ -1,0 +1,5 @@
+.users{
+    display: flex;
+    column-gap: 100px;
+    border: #0d2a19;
+}
