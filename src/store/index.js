@@ -1,2 +1,2 @@
-import * from './slices';
-import * from './store';
+export * from './slices';
+export * from './store';
