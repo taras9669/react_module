@@ -1,7 +1,12 @@
+.App-main{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
 .App-temp{
   display: flex;
   flex-direction: column;
-  background: #d7d4d4;
+  background: #e5caca;
   border: solid 2px;
   border-radius: 10px;
   justify-content: center ;
